@@ -1,6 +1,11 @@
 /* @file styles.css */
 
-/* @todo Use some CSS variables! */
+/* Use some CSS variables! Good for color schemes! */
+:root{
+    --lc: #0cc;
+    --vc: #0aa;
+    --hc: #0ff;
+}
 
 html {
     height: 100%; /* in case we use a gradient background */
@@ -24,20 +29,40 @@ header {
     border-top-right-radius: 5px;
     background-color: #555;
     text-align: center;
+    padding: 3px;
 }
 
 nav {
     border-radius: 0;
     background-color: #000;
     color: #fff;
+    padding: 3px;
 }
 
 nav ul {
-    display: inline-block;
+    /*display: inline-block;*/
+    list-style-type: none;  /* It's still a list. */
+    /*border: 1px solid #f00;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul > li {
-    display: inline;
+    /*display: inline;
+    min-width: 20%; */
+    border: 1px solid #ccc;
+    display: block;
+    min-width: 15%;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0px;
 }
 
 main {
@@ -46,8 +71,10 @@ main {
     background-color: #555;
     color: #fff;
     min-height: calc(100vh - 50px);
+    padding: 3px;
 }
 footer {
+    padding: 3px;
     height: 50px;
 }
 
@@ -59,6 +86,7 @@ h3 {}
 
 header h1 {
     text-shadow: 3px 3px 5px #111;
+    font-size: 36pt;
 }
 
 main h2 {
@@ -73,14 +101,20 @@ main h3 {
 p {}
 
 a[href]:link {
-    color: #e0e;
+    color: var(--lc); /* #e0e; */
+    text-decoration: none;
 }
 a[href]:visited {
-    color: #c0c;
+    color: var(--vc); /* #c0c; */
+    text-decoration: none;
 }
-a[href]:active {}
+a[href]:active {
+    text-decoration: underline;
+}
 a[href]:hover {
-    color: #f0f;
+    /* @TODO: transition */
+    color: var(--hc); /* #f0f; */
+    text-decoration: none;
 }
 
 code {}
