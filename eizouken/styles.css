@@ -1,0 +1,56 @@
+/* @file eizouken/styles.css */
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, nav, main, footer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, nav, main {
+    box-shadow: 2px 2px 5px #666;
+}
+
+header {
+    background-color: #00f;
+    color: #ff0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 3px;
+}
+header hgroup {
+    text-align: center;
+}
+header hgroup h1 {}
+header hgroup h2 {}
+
+main {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 3px;
+}
+
+.character {
+    overflow: auto;
+}
+
+.character figure {
+    float: left;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #666;
+}
+.character figure img {
+    width: 300px;
+    height: 168px; 
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.character figure figcaption {
+    font-size: 9pt;
+}
