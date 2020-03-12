@@ -54,3 +54,32 @@ main {
 .character figure figcaption {
     font-size: 9pt;
 }
+
+#about figure {
+    text-align:center;
+}
+
+/* TODO: RWD this image! */
+#about figure img {
+    width: 600px;
+    height: 509px;
+}
+
+#about figure figcaption,
+#music figure figcaption
+ {
+    font-size: 9pt;
+}
+
+#music figure {
+    text-align: center;
+}
+
+#music figure img {
+    min-width: 480px;
+    min-height: 270px;
+}
+
+#music p {
+    text-align: center;
+}
