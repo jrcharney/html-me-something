@@ -83,3 +83,11 @@ main {
 #music p {
     text-align: center;
 }
+
+#credits figure {
+    text-align: center;
+}
+#credits figure img {
+    width: 400px;
+    height: 280px;
+}
