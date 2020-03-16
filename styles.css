@@ -135,3 +135,21 @@ pre {
     font-family: monospace;
     border-radius: 3px;
 }
+
+figure {
+    border: 5px;
+    box-shadow: 2px 2px 5px #111;
+}
+
+figure img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+figure figcaption {
+    font-size: 10pt;
+}
+
+.fleft {
+    float: left;
+}
